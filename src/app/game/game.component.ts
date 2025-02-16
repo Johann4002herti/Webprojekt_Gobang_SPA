@@ -151,5 +151,5 @@ export class GameComponent {
         wert = unescape(wert).replace("+", " ");
         this[name] = wert;
       }*/
-
+// irgendwas 
 }
