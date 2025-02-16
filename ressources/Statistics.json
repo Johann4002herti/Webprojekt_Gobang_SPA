@@ -1,0 +1,18 @@
+{
+  "continent":"North-America",
+  "country":"Bahamas",
+  "population":400516,
+  "cases": {
+    "new":null,
+    "active":874,
+    "critical":1,
+    "recovered":36366,
+    "total":38084
+  },
+  "deaths":{
+    "new":null,
+    "total":844
+  },
+  "day":"2025-02-08",
+  "time":"2025-02-08T10:15:05+00:00"
+}

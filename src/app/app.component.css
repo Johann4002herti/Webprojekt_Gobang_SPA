@@ -1,0 +1,18 @@
+
+@import "../bootstrap.min.css";
+
+.mainPart{
+  margin: 0;
+  position: fixed;
+  top: 75%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.myheadline{
+  color: rgba(132, 79, 29, 0.91);
+  text-align: left;
+  font-size: xxx-large;
+  text-decoration: underline;
+  padding-left: 2px;
+}

@@ -1,0 +1,16 @@
+
+@import "../bootstrap.min.css";
+
+#header{
+  background-color: rgb(145, 168, 90);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.myheadline{
+  color: rgba(132, 79, 29, 0.91);
+  text-align: left;
+  font-size: xxx-large;
+  text-decoration: underline;
+  padding-left: 15px;
+}

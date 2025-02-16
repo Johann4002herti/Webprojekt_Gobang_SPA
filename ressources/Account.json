@@ -1,0 +1,10 @@
+{
+  "Email" : "Test@test.com",
+  "Password" : "passwort12345",
+  "UserName" : "ProfiPlayer",
+  "Name" : {
+    "FirstName" : "Tom",
+    "LastName" : "Mueller"
+  },
+  "DateOfBirth" : "19-12-2000"
+}

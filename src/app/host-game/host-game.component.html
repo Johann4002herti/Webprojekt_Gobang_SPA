@@ -1,0 +1,72 @@
+<div class="row formularDivs">
+  <span class="col-md-4"></span>
+  <span class="col-md-4 d-flex justify-content-center"><h2>Start a new Game</h2></span>
+  <span class="col-md-4"></span>
+</div>
+<div class="row formularDivs">
+  <span class="col-md-2"></span>
+  <span class="col-md-8 d-flex justify-content-center">
+            <p>
+                Please Provide the following details: <br/>
+            </p></span>
+  <span class="col-md-2"></span>
+</div>
+<div class="row formularDivs">
+  <span class="col-md-2"></span>
+  <span class="col-md-8 d-flex justify-content-center">
+            Size of the Board: &nbsp;
+            <select name = "input-size" id = "input-size">
+                <option value="15">15x15</option>
+                <option value="17">17x17</option>
+                <option value="19">19x19</option>
+            </select>
+
+        </span>
+  <span class="col-md-2"></span>
+</div>
+<div class="row formularDivs">
+  <span class="col-md-2"></span>
+  <span class="col-md-8 d-flex justify-content-center">
+            Type of Game: &nbsp;
+                <select name="input-type" id="input-type">
+                    <option value="Gomoku">Gomoku</option>
+                    <option value="Gobang">Gobang</option>
+                  <!--<option value="Renju"></option>
+                  <option value="Pente"></option>
+                  <option value="Ninuki Renju"></option>
+                  <option value="x-Gewinnt"></option>-->
+                </select>
+
+        </span>
+  <span class="col-md-2"></span>
+</div>
+<div class="row formularDivs">
+  <span class="col-md-2"></span>
+  <span class="col-md-8 d-flex justify-content-center">
+            Benefit sharing: &nbsp;<input type="checkbox" name="input-bs" id = "input-bs" value=""/>
+        </span>
+  <span class="col-md-2"></span>
+</div>
+<div class="row formularDivs">
+  <span class="col-md-2"></span>
+  <span class="col-md-8 d-flex justify-content-center">
+            Game Code: &nbsp;<input type="text" name="input-Code" id = "input-Code" value=""/>
+        </span>
+  <span class="col-md-2"></span>
+</div>
+<div class="row formularDivs">
+  <span class="col-md-2"></span>
+  <span class="col-md-8 d-flex justify-content-center">
+            <a id="StartGame" class="myGameButton" (click)="startGame()">
+              Host Game
+            </a>
+        </span>
+  <span class="col-md-2"></span>
+</div>
+<div class="row formularDivs">
+  <span class="col-md-2"></span>
+  <span class="col-md-8 d-flex justify-content-center">
+            <a routerLink = ""> Back to Homepage </a>
+        </span>
+  <span class="col-md-2"></span>
+</div>

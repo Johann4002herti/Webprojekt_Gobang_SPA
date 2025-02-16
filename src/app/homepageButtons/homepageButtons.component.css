@@ -1,0 +1,23 @@
+
+@import "../../bootstrap.min.css";
+
+.myGameButton{
+  background-color: rgba(226, 214, 85, 0.29);
+  color: rgba(132, 79, 29, 0.91);
+  margin: 2px;
+  padding: 10px;
+  border: 1px outset buttonborder;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  font-size: xxx-large;
+}
+
+a{
+  color: rgba(132, 79, 29, 0.91);
+}
+
+a:hover{
+  text-decoration: none;
+  color: rgba(132, 79, 29, 0.91);
+}

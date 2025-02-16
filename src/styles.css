@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "bootstrap.min.css";
+
+#body{
+  background-color: rgba(226, 214, 85, 0.29);
+  font-family: "Bahnschrift", "Comic Sans MS", "Franklin Gothic Book", ui-rounded;
+  font-size: x-large;
+}
+
+.centerText{
+  text-align: center;
+  margin: auto;
+}
+
+.mainPart{
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
