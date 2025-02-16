@@ -15,9 +15,13 @@ export class GameComponent {
   game : any;
   gameCode : string  = "";
   localPlayer : string = "";
-  static blackPiece :string = "../resources/Gobang/blackPiece_1";
-  static whitePiece :string = "../resources/Gobang/whitePiece_1";
-  static background  = "../resources/Gobang/background_1";
+  static blackPiece :string = "assets/Gobang/blackPiece_1";
+  static whitePiece :string = "assets/Gobang/whitePiece_1";
+  background : string;
+
+  constructor() {
+    this.background   = "assets/Gobang/background_1.png"
+  }
 
   async ngOnInit(){
     let temp = localStorage.getItem('gameCode');
@@ -82,7 +86,8 @@ export class GameComponent {
               DS += "<tr class='tableMarginPadding'>";
               for (let j = 0; j < data.Board.Size; j++) {
                 DS += "<td class='tableMarginPadding'>" +
-                  "<img [src] = 'https://cdn.pixabay.com/photo/2025/01/20/19/00/love-9347917_1280.jpg' class='field' id='" + i + "_" + j + "' alt='' onclick='makeMove("+i+","+j+")'>" +
+                  //"<span class='field' id='" + i + "_" + j + "' (click)='makeMove("+i+","+j+")'>hallo</span>"+
+                  "<img src = 'assets/Gobang/background_1.png' class='field' id='" + i + "_" + j + "' alt='image' (click)='makeMove("+i+","+j+")'>" +
                   "</td>";
               }
               DS += "</tr>";
@@ -92,7 +97,7 @@ export class GameComponent {
             console.log(DS)
             $("#board").html(DS);
 
-            //"+GameComponent.background+"
+            //
 
             data.Board.Tiles.forEach(function (entry : any) {
               GameComponent.checkStatus(entry["x-coordinate"], entry["y-coordinate"], entry.Status)
@@ -126,7 +131,7 @@ export class GameComponent {
       } else if (status == "playerTwo") {
         $("#"+i+"_"+j).attr("src",GameComponent.whitePiece);
       } else {
-        $("#"+i+"_"+j).attr("src", GameComponent.background);
+        //$("#"+i+"_"+j).attr("src", "background");
       }
     }
 
