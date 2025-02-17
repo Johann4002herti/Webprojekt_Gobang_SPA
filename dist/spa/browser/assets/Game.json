@@ -1,0 +1,17 @@
+{
+    "GameCode" : "okfdsw34567",
+    "PlayerOnesTurn" : true,
+    "Board" : {
+      "Size" : 15,
+      "Tiles" : [
+        {
+          "Status" : "empty",
+          "x-coordinate" : 9,
+          "y-coordinate" : 3
+        }
+      ]
+    },
+    "Type" : "Gobang",
+    "BenefitSharing" : true,
+    "GameStatus" : "isRunning"
+}
