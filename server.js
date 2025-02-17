@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static('dist/spa');//path.join(__dirname, 'dist/spa'))); // Passe den Pfad zum dist-Ordner an
+app.use(express.static('dist/spa'));//path.join(__dirname, 'dist/spa'))); // Passe den Pfad zum dist-Ordner an
 
 app.get('*', (req, res) => {
   res.sendFile('dist/spa/index.html');//path.join(__dirname, 'dist/spa/index.html')); // Passe den Pfad an
