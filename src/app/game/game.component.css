@@ -1,34 +1,42 @@
 
 @import "../../bootstrap.min.css";
 
-table.table-bordered{
-  z-index: 0;
-  border:1px solid black;
-  margin-top:20px;
-}
-table.table-bordered > thead > tr > th{
-  border:1px solid black;
-}
-table.table-bordered > tbody > tr > td{
-  border:1px solid black;
+#board{
+  margin: auto;
+  z-index: 20;
 }
 
 .tableBoard{
   display: flex;
   justify-content: center;
   margin: auto;
-  padding: 0px;
+  padding: 0;
 }
+
+td{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  max-width: 40px;
+  max-height: 40px;
+  height: 40px;
+  width: 40px;
+  vertical-align: center;
+
+}
+
 .tableMarginPadding{
   display: flex;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .field{
   display: grid;
   border: none;
-  margin: 0px;
+  margin: 0;
+  max-width: 40px;
+  max-height: 40px;
   height: 40px;
   width: 40px;
 }
