@@ -35,7 +35,8 @@ export class GameComponent {
       this.localPlayer = temp
     }
     await new Promise(f => setTimeout(f, 20));
-    while (false){
+    GameComponent.getBoard()
+    while (true){
       await new Promise(f => setTimeout(f, 2000));
       GameComponent.getBoard()
     }
